@@ -63,7 +63,11 @@ class Game extends Component {
 
         <Word game={game()} />
         <div className="buttons">{wordBoard}</div>
-        <button className="play-again">Play Again</button>
+        <button className="play-again">
+          <a className="play-again" href="/">
+            Play Again
+          </a>
+        </button>
       </div>
     )
   }
