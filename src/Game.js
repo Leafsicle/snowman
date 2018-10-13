@@ -48,12 +48,21 @@ class Game extends Component {
 			return mappedLetter
 		}
 
+		let wordBoard = this.state.letter.map((letter, index) => {
+			return <Keys key={index} position={index} letter={letter} />
+		})
+
 		return (
 			<div class="board">
 				<h1>Do you wanna build a snowman?</h1>
-				<img alt="This is a Snow-person" src="./images/step_0.png" />
+				<img
+					class="snow"
+					alt="This is a Snow-person"
+					src="./images/step_0.png"
+				/>
+
 				<Word game={game()} />
-				<Keys letter={this.state.letter} />
+				<div className="buttons">{wordBoard}</div>
 				<button className="play-again">Play Again</button>
 			</div>
 		)
