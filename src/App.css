@@ -11,13 +11,14 @@ p {
   margin: 7px;
   font-size: 7rem;
 }
-<<<<<<< HEAD
 img{
 max-width: 350px;
-=======
+}
 .snow {
   max-width: 350px;
->>>>>>> 4af21c261926ad7fdc9f5e6bee89eae91736b1c5
+}
+.snow {
+  max-width: 350px;
 }
 .guess {
   display: flex;
