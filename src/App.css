@@ -4,12 +4,15 @@
   align-items: center;
   justify-content: center;
 }
+h1{
+  margin-bottom:1rem;
+}
 p{
   margin: 7px;
   font-size: 7rem;
 }
 .snow{
-max-width: 400px;
+max-width: 350px;
 }
 .guess{
   display: flex;
