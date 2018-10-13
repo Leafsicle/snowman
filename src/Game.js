@@ -15,7 +15,7 @@ class Game extends Component {
 					<p>_</p>
 					<p>_</p>
 				</div>
-				<div>
+				<div class="buttons">
 					<button>a</button>
 					<button>b</button>
 					<button>c</button>
