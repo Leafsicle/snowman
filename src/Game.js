@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Keys from './Keys'
 import Word from './Word'
+import { timingSafeEqual } from 'crypto'
 
 class Game extends Component {
 	state = {
@@ -39,11 +40,14 @@ class Game extends Component {
 		return (
 			<div class="board">
 				<h1>Do you wanna build a snowman?</h1>
-				<img class="snow" src="./images/step_0.png" />
-				<Word />
+				<img
+					class="snow"
+					alt="This is a Snow-person"
+					src="./images/step_0.png"
+				/>
+				<Word gameChoice={this.state.gameChoice} />
 				<Keys letter={this.state.letter} />
 				<button className="play-again">Play Again</button>
-				<button>rando</button>
 			</div>
 		)
 	}

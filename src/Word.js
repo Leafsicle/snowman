@@ -6,14 +6,17 @@ class Word extends Component {
 		let game = () => {
 			let randomize = Math.floor(Math.random() * words.length)
 			let word = words[randomize]
-			console.log(word)
 			let letters = word.split('')
-			// let gameletters = this.state.gameChoice
+			// console.log(letters)
+			letters.map(letter => {
+				return letter('')
+			})
 		}
-		componentDidMount() {
-			this.game()
-		}
-	}
+
+		// this.setState({
+		// 	gameChoice: gameletters
+		// })
+
 		return (
 			<div>
 				<div class="guess">
