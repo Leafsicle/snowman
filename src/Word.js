@@ -7,13 +7,17 @@ class Word extends Component {
 			let randomize = Math.floor(Math.random() * words.length)
 			let word = words[randomize]
 			console.log(word)
-			// let letters = word.split('')
+			let letters = word.split('')
 			// let gameletters = this.state.gameChoice
 		}
-
+		componentDidMount() {
+			this.game()
+		}
+	}
 		return (
 			<div>
 				<div class="guess">
+					{game()}
 					{/* when the word is generated we need to split and map to the game choice array.
           once in the array when the player clicks a letter button, the playerchoice array is populated  and compared*/}
 				</div>
