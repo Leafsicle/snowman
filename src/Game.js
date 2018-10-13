@@ -41,6 +41,7 @@ class Game extends Component {
         <Word />
         <Keys letter={this.state.letter} />
         <button className="play-again">Play Again</button>
+        <button>rando</button>
       </div>
     )
   }
