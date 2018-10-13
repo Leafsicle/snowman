@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Keys from './Keys'
 import Word from './Word'
-import { timingSafeEqual } from 'crypto'
+import words from './words.json'
 
 class Game extends Component {
 	state = {
@@ -35,6 +35,17 @@ class Game extends Component {
 		],
 		playerChoice: [],
 		gameChoice: []
+	}
+	let game = () => {
+		let randomize = Math.floor(Math.random() * words.length)
+		let word = words[randomize]
+		let letters = word.split('')
+		console.log(letters)
+		letters.map(letter => {
+			this.props({
+				gameChoice: letters
+			})
+		})
 	}
 	render() {
 		return (
