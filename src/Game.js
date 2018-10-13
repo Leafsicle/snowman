@@ -31,7 +31,9 @@ class Game extends Component {
 			'x',
 			'y',
 			'z'
-		]
+		],
+		playerchoice: [],
+		gamechoice: []
 	}
 	render() {
 		return (
