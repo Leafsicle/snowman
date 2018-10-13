@@ -11,6 +11,12 @@ p {
   margin: 7px;
   font-size: 7rem;
 }
+img{
+max-width: 350px;
+}
+.snow {
+  max-width: 350px;
+}
 .snow {
   max-width: 350px;
 }
