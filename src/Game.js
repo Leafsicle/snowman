@@ -32,8 +32,8 @@ class Game extends Component {
 			'y',
 			'z'
 		],
-		playerchoice: [],
-		gamechoice: []
+		playerChoice: [],
+		gameChoice: []
 	}
 	render() {
 		return (
@@ -42,6 +42,8 @@ class Game extends Component {
 				<img class="snow" src="./images/step_0.png" />
 				<Word />
 				<Keys letter={this.state.letter} />
+				<button className="play-again">Play Again</button>
+				<button>rando</button>
 			</div>
 		)
 	}
