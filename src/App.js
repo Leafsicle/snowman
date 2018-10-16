@@ -37,10 +37,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App ">
-				<Span />
-				<Span />
-				<Span />
+			<div className="App">
 				<Header />
 				<Snowman
 					className="clouds"

@@ -3,21 +3,20 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: #0F203D;
-margin: -10rem 0 0 0 ;
-}
+padding-bottom: 200000px;}
+html, body {margin: 0; height: 100%vh; overflow: hidden}
+
 .header{
   font-family: 'Snowburst One', cursive;
   font-size: 3rem;
   text-align: center;
   color: azure;
-  margin-top: 0;
-  padding-top: 0;
+  margin-bottom: 3rem;
 }
 img {
   width: 300px;
   border-radius:20%;
 }
-
 .randomWord{
   display: flex;
   list-style: none;
@@ -36,7 +35,8 @@ margin-right: 10px;
 }
 
 .fallingSnow {
-  text-align: center;
+height:0;
+text-align: center;
 }
 .fallingSnow span {
   display: inline-block;
