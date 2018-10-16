@@ -1,3 +1,8 @@
+.App{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 img {
   width: 300px;
 }
@@ -5,14 +10,13 @@ img {
 .randomWord{
   display: flex;
   list-style: none;
-  justify-content: space-between;
 }
-.letterButtons{
+.letterButtons{ 
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.letterButtons li{
+/* .letterButtons li{
   margin-right:10px;
-}
+} */

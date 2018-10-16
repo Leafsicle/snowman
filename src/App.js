@@ -36,7 +36,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Snowman correctGuessCount={this.correctGuessCount()} />
+				<Snowman className="clouds" correctGuessCount={this.correctGuessCount()} />
 				<WordDisplay
 					randomWord={this.state.randomWord}
 					lettersChosen={this.state.lettersChosen}
