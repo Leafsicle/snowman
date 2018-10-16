@@ -7,9 +7,13 @@ class LetterButton extends Component {
 	}
 	render() {
 		return (
-			<button disabled={this.props.disabled} onClick={this._letterChoice}>
+			<a
+				class="button"
+				disabled={this.props.disabled}
+				onClick={this._letterChoice}
+			>
 				{this.props.letter}
-			</button>
+			</a>
 		)
 	}
 }

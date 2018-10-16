@@ -4,6 +4,8 @@ import Words from './Words.json'
 import WordDisplay from './WordDisplay'
 import Snowman from './Snowman'
 import Keys from './Keys'
+import Header from './Header'
+import Span from './Span'
 
 class App extends Component {
 	constructor(props) {
@@ -35,8 +37,15 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App">
-				<Snowman className="clouds" correctGuessCount={this.correctGuessCount()} />
+			<div className="App ">
+				<Span />
+				<Span />
+				<Span />
+				<Header />
+				<Snowman
+					className="clouds"
+					correctGuessCount={this.correctGuessCount()}
+				/>
 				<WordDisplay
 					randomWord={this.state.randomWord}
 					lettersChosen={this.state.lettersChosen}
