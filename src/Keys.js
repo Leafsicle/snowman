@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LetterButton from './LetterButton.jsx'
+import LetterButton from './LetterButton'
 
 class Keys extends Component {
 	render() {

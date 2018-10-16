@@ -41,7 +41,7 @@ class App extends Component {
 					randomWord={this.state.randomWord}
 					lettersChosen={this.state.lettersChosen}
 				/>
-				<Alphabet
+				<Keys
 					letterChosen={this.letterChosen}
 					lettersChosen={this.state.lettersChosen}
 				/>
